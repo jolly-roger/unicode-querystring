@@ -44,6 +44,6 @@ const qs = stringify({
 });
 ```
 
-## license
+## License
 
 MIT
