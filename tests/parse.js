@@ -1,6 +1,6 @@
 const tape = require('tape');
 
-const uqs = require('../src');
+const uqs = require('../index');
 
 tape.test('parse', (t) => {
     t.test('undefined', (t) => {
