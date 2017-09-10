@@ -1,0 +1,50 @@
+{
+  "name": "unicode-querystring",
+  "version": "1.0.0",
+  "description": "Simple library for parsing and generation unicode query string",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/tape ./tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolly-roger/unicode-querystring.git"
+  },
+  "keywords": [
+    "unicode",
+    "url",
+    "uri",
+    "query",
+    "string",
+    "search",
+    "params"
+  ],
+  "author": {
+    "name": "Igor Onyshchenko",
+    "email": "igor.onyshchenko@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jolly-roger/unicode-querystring/issues"
+  },
+  "homepage": "https://github.com/jolly-roger/unicode-querystring#readme",
+  "devDependencies": {
+    "tape": "^4.8.0"
+  },
+  "testling": {
+    "files": "tests/*.js",
+    "browsers": [
+      "ie/9..latest",
+      "chrome/5..latest",
+      "firefox/4..latest",
+      "safari/5..latest",
+      "opera/10.5..latest",
+      "iphone/6..latest",
+      "ipad/6..latest",
+      "android-browser/latest"
+    ]
+  },
+  "engines": {
+    "node": ">=8.4.0"
+  }
+}
