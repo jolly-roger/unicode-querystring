@@ -52,10 +52,12 @@
         return names.reduce(function(params, name) {
             if (Array.isArray(q[name])) {
                 q[name].forEach(function(value) {
-                    params.push(name + encodeURI(value));
+                    value && params.push(name + VALUE_DELIMITER + encodeURI(value));
                 });
-            } else {
-                params.push(name + encodeURI(value));
+            } else if (typeof q[name] === 'object') {
+                params.push(name + VALUE_DELIMITER + encodeURI(JSON.stringify(q[name])));
+            } else if (q[name]) {
+                params.push(name + VALUE_DELIMITER + encodeURI(q[name]));
             }
             
             return params;
